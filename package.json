@@ -1,6 +1,6 @@
 {
   "name": "firebase-server-value",
-  "main": "./src",
+  "main": "./release",
   "version": "1.0.0",
   "description": "Create, detect, and validate Firebase.ServerValue",
   "license": "MIT",
