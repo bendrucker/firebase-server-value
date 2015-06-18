@@ -13,30 +13,41 @@ $ npm install --save firebase-server-value
 ## Usage
 
 ```js
-var firebaseServerValue = require('firebase-server-value');
+var firebaseServerValue = require('firebase-server-value')
 
 firebaseServerValue.parse({
   '.sv': 'timestamp'
-}); // => current timestamp
+}) // => current timestamp
 ```
 
 ## API
 
-### `sv.ServerValue`
+#### `sv.ServerValue`
 
 An object deeply equal to `Firebase.ServerValue`
 
-### `sv.is(value)`
-
-#### input
+#### `sv.is(value)`
 
 Checks whether a given value is a valid `ServerValue` placeholder.
 
-### `sv.parse(value)`
+##### value
 
-Parse a `ServerValue` placeholder into its actual value. This will throw an error if `value` is not a valid `ServerValue` according to `sv.is`.
+*Required*  
+Type: `any`
 
-### `sv.values`
+
+#### `sv.parse(value)`
+
+Parse a `ServerValue` placeholder into its actual value.
+
+##### value
+
+*Required*  
+Type: `object`
+
+An error will be thrown if value is not a valid `ServerValue` according to `sv.is`.
+
+#### `sv.values`
 
 An object with keys corresponding to the valid `'.sv'` placeholders (currently just `'timestamp'`) and the function used by `sv.parse` to generate a result as the values. The functions are called with no arguments. They can be overridden to modify the conversion of placeholders to true values.
 
