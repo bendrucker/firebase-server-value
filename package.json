@@ -29,5 +29,9 @@
   },
   "dependencies": {
     "is-object": "~1.0.1"
-  }
+  },
+  "files": [
+    "index.js",
+    "readme.md"
+  ]
 }
