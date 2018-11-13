@@ -1,4 +1,4 @@
-# firebase-server-value [![Build Status](https://travis-ci.org/bendrucker/firebase-server-value.svg?branch=master)](https://travis-ci.org/bendrucker/firebase-server-value)
+# firebase-server-value [![Build Status](https://travis-ci.org/bendrucker/firebase-server-value.svg?branch=master)](https://travis-ci.org/bendrucker/firebase-server-value) [![Greenkeeper badge](https://badges.greenkeeper.io/bendrucker/firebase-server-value.svg)](https://greenkeeper.io/)
 
 > Create, detect, and validate [Firebase.ServerValue](https://www.firebase.com/docs/web/api/servervalue/)
 
